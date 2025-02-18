@@ -1,0 +1,15 @@
+gte -> greater than or equal
+lte -> less than or equal
+
+Assumimos sempre (por enquanto), que o server encontra-se em localhost:3000
+
+
+Para encontrar cidades com populacao ente 100'000 e 500'000, ordenadas por nome, usamos:
+
+.../cidades?população_gte=100000&população_lte=500000&_sort=nome
+
+
+
+Para encontrar ligações com origem C1, distancia >= 200, e retornar o mais curto destes.
+
+.../ligacoes?origem=c1&distância_gte=200&_sort=distância&_limit=1
