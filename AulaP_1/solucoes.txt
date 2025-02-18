@@ -13,3 +13,6 @@ Para encontrar cidades com populacao ente 100'000 e 500'000, ordenadas por nome,
 Para encontrar ligações com origem C1, distancia >= 200, e retornar o mais curto destes.
 
 .../ligacoes?origem=c1&distância_gte=200&_sort=distância&_limit=1
+
+
+

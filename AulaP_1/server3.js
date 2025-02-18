@@ -10,7 +10,7 @@ http.createServer((req, resp) => {
             switch(req.url) {
                 case '/data': 
                     resp.writeHead(200, {'content-type':'text/html;charset=utf-8'});
-                    resp.write(meta.myDateTime());
+                    resp.write("" + meta.myDateTime() + "");
                     break;
                 case '/nome': 
                     resp.writeHead(200, {'content-type':'text/html;charset=utf-8'});
