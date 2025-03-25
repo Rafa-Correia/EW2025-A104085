@@ -1,0 +1,18 @@
+var mongoose = require('mongoose')
+
+var contratosSchema = new mongoose.Schema({
+    _id : Number,
+    nAnuncio : String,
+    tipoprocedimento : String,
+    objectoContrato : String,
+    dataPublicacao : String,
+    dataCelebracaoContrato : String,
+    precoContratual : Number,
+    prazoExecucao : String,
+    NIPC_entidate_comunicante : Number,
+    entidade_comunicante : String,
+    fundamentacao : String
+
+}, {versionKey : false})
+
+module.exports = mongoose.model('contrato', contratosSchema)
