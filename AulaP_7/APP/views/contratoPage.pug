@@ -1,0 +1,34 @@
+extends layout 
+
+block content 
+    .w3-card-4
+        header.w3-container.w3-teal
+            h1 
+                span Detalhes do contrato  
+        
+        .w3-container
+            table.w3-table-all
+                tr
+                    th Id
+                    th Nr. Anuncio
+                    th Tipo de Procedimento
+                    th Objeto
+                    th Data de Publicacao
+                    th Data Celebracao
+                    th Preco Contratual
+                    th Prazo de Execucao
+                    th NIPC de E.C.
+                    th Entidade Comunicante
+                    th Fundamentacao
+                    tr 
+                        td.truncate(title=contract._id)= contract._id
+                        td.truncate(title=contract.nAnuncio)= contract.nAnuncio || N/A
+                        td.truncate(title=contract.tipoprocedimento)= contract.tipoprocedimento || N/A
+                        td.truncate(title=contract.objectoContrato)= contract.objectoContrato || N/A
+                        td.truncate(title=contract.dataPublicacao)= contract.dataPublicacao || N/A
+                        td.truncate(title=contract.dataCelebracaoContrato)= contract.dataCelebracaoContrato || N/A
+                        td.truncate(title=contract.precoContratual)= contract.precoContratual || N/A
+                        td.truncate(title=contract.prazoExecucao)= contract.prazoExecucao || N/A
+                        td.truncate(title=contract.NIPC_entidade_comunicante)= contract.NIPC_entidade_comunicante || N/A
+                        td.truncate(title=contract.entidade_comunicante)= contract.entidade_comunicante || N/A
+                        td.truncate(title=contract.fundamentacao)= contract.fundamentacao || N/A
