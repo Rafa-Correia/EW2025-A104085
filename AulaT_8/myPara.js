@@ -37,7 +37,7 @@ $(function() {
             },
             dataType: 'json',
             success: (resp) => {
-                alert("Success! Paragraph inserted into DB: " + JSON.stringify(resp))
+                console.log("Success! Paragraph inserted into DB: " + JSON.stringify(resp))
 
                 para_count += 1
                 $("#paraText").val("")
@@ -57,7 +57,7 @@ $(function() {
         })
     })
 
-    $("#paraList").on("click", ".removeP", () => {
+    $("#paraList").on("click", ".removeP", function () {
         let li_elem = $(this).parent()
         let para_id = li_elem.attr("p_id")
 
