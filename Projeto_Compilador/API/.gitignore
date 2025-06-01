@@ -1,4 +1,0 @@
-#ignore installed node modules
-/node_modules
-/uploads
-/public/filestore
